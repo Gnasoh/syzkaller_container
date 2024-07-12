@@ -1,0 +1,2 @@
+syzkaller/bin/syz-repro filter=lfs diff=lfs merge=lfs -text
+syzkaller/bin/syz-manager filter=lfs diff=lfs merge=lfs -text
