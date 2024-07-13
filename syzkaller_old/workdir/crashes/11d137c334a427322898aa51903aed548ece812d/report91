@@ -1,0 +1,13 @@
+ioctl$TCSETS(r4, 0x5402, &(0x7f0000000040)={0x0, 0x0, 0x0, 0x0, 0x0, "bfed9df148130e294343acbe4d169023eee814"})
+ioctl$TCSETS(r4, 0x5402, &(0x7f0000000000)={0x0, 0x0, 0x0, 0xfffffffd, 0x0, "184d270300000000000900000000000000a02c"})
+setsockopt$sock_int(r1, 0x1, 0x2b, &(0x7f0000000080)=0x8, 0x4)
+2024/05/09 07:28:14 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

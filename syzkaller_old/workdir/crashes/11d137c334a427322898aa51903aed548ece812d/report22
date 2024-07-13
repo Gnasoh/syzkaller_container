@@ -1,0 +1,15 @@
+arch_prctl$ARCH_GET_MAX_TAG_BITS(0x4003, 0x0)
+socket$unix(0x1, 0x1, 0x0)
+pipe2(&(0x7f0000000100)={0xffffffffffffffff, <r2=>0xffffffffffffffff}, 0x0)
+r3 = syz_clone(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+kcmp$KCMP_EPOLL_TFD(0xffffffffffffffff, r3, 0x7, 0xffffffffffffffff, &(0x7f0000000040)={r2})
+2024/05/09 18:14:14 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

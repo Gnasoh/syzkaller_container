@@ -1,0 +1,15 @@
+03:22:05 executing program 2:
+userfaultfd(0x800)
+r0 = openat(0xffffffffffffff9c, &(0x7f0000000100)='./file1\x00', 0x80042, 0x1e0)
+ioctl$FS_IOC_RESVSP(r0, 0x40305828, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x7fffffff})
+ioctl$FITRIM(r0, 0xc0185879, &(0x7f0000000000)={0x8, 0x1, 0x6})
+2024/05/09 03:22:05 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

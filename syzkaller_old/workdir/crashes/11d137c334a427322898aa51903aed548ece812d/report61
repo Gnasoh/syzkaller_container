@@ -1,0 +1,15 @@
+setsockopt$inet_int(r0, 0x0, 0x6, &(0x7f0000000080)=0x4, 0x4)
+ioctl$TUNSETDEBUG(r5, 0x400454c9, &(0x7f0000000400)=0x10001)
+r6 = socket$inet6_mptcp(0xa, 0x1, 0x106)
+accept4$inet6(r6, 0x0, 0x0, 0x0)
+chown(&(0x7f0000000040)='./file0\x00', 0x0, 0x0)
+2024/05/10 07:17:19 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

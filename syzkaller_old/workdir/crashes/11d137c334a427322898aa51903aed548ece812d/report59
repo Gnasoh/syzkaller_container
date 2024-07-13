@@ -1,0 +1,11 @@
+ {[], @dest_unreach={0x1, 0x0, 0x0, 0x0, '\x00', {0x0, 0x6, "af3b37", 0x0, 0x0, 0x0, @remote, @private1, [@fragment={0x0, 0x0, 0x8, 0x0, 0x0, 0x6, 0x67}], "2d601154b3d89fcebeba097b5ec221d4e9d66a822ed1ed3b5d8dfcd6023085002ffc9c7de1904e6b8361d2a723937800ab7063248ed147bf28b3ae0183a6f63c05fb881e83fd3f298bd516574a50143257cbae7dcc8d34712be92e63c5d1f6083b4d72cb648e41b1862f78dfa06b1eee4daf76bd9a144c529b39b5eed8dbfb105a5688f37166dbc7a0bc4de039cd93fd8d1ae143795bc4580cd0d0d3270806d001145347763ca710e70d"}}}}}}}, 0x0)
+2024/05/10 06:57:19 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

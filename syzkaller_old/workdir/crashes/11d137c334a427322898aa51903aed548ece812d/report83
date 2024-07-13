@@ -1,0 +1,13 @@
+sendmmsg$inet(r1, &(0x7f0000002ac0)=[{{&(0x7f0000000040)={0x2, 0x4e26, @local}, 0x10, 0x0}}, {{&(0x7f0000000480)={0x2, 0x4e21, @private=0xa010101}, 0x10, 0x0, 0x0, &(0x7f0000000b40)=[@ip_retopts={{0x14, 0x0, 0x7, {[@ssrr={0x89, 0x3, 0xe3}]}}}], 0x18}}], 0x2, 0x0)
+mlock2(&(0x7f0000002000/0x1000)=nil, 0x1000, 0x0)
+write$sysctl(r0, &(0x7f0000000000)='4\x00', 0x2)
+2024/05/09 05:02:53 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

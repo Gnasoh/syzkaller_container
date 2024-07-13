@@ -1,0 +1,15 @@
+close(r2)
+close(0xffffffffffffffff)
+execveat(0xffffffffffffff9c, &(0x7f0000000480)='./file1\x00', 0x0, 0x0, 0x0)
+pkey_mprotect(&(0x7f0000000000/0x4000)=nil, 0x4000, 0x5, 0xffffffffffffffff)
+keyctl$join(0x1, &(0x7f0000002e40)={'syz', 0x1})
+2024/05/09 10:26:39 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

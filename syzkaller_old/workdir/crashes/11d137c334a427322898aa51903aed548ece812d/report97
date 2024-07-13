@@ -1,0 +1,15 @@
+9498e4b077e1b3545daaad8b415aca170ac5cb6f478c49bdeac6ebc22934b622e5e4a486108b3eb4e3320b581eee9a1a03d9ac9864cee11dd288db7aaaf75390c2d46e8248cf6d2bd26f2cea7e3da87ee403dea40a49b6261dc5e3123a83c258d3a724d45b23d47492ed75095454419fdf4680467a4e1a41cda2698a370200ead", 0xad, 0xffffffffffffffff)
+r7 = getuid()
+statx(0xffffffffffffffff, &(0x7f0000001480)='./file0\x00', 0x2000, 0x848, &(0x7f00000014c0)={0x0, 0x0, 0x0, 0x0, 0x0, <r8=>0x0})
+keyctl$chown(0x4, r2, r7, r8)
+keyctl$read(0xb, r6, &(0x7f0000001940)=""/92, 0x5c)
+2024/05/09 09:43:22 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

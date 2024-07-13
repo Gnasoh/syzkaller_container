@@ -1,0 +1,15 @@
+close(0x3)
+socketpair$nbd(0x1, 0x1, 0x0, &(0x7f0000000040)={0xffffffffffffffff, <r8=>0xffffffffffffffff})
+writev(r8, &(0x7f0000000080)=[{&(0x7f0000000140)="d7", 0x1}], 0x1)
+sendfile(r3, r2, 0x0, 0x0)
+pread64(r1, &(0x7f00000000c0)=""/4111, 0x100f, 0x0)
+2024/05/09 16:28:30 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

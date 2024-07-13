@@ -1,0 +1,13 @@
+movexattr(r12, &(0x7f0000000040)=ANY=[@ANYBLOB="7391421a03f2b5bfb326fb9d8f6192b147dbf99d4aa55f6c43e12ef479efcbf5772265ce56ad28c10963b939f04d2d3a57379449d83f619fae22d70acaf5eaa248a454891533e8c9f039cd00878d186f1e30c7250b04714aea356bdf192644b9a16b33cc135b89330f0e0648ad339d4409fa2ade71d5c430dc951893d34dbe6941c8286b8688621f424156b149535a6b4ef1ea2e14b034b9b355a20a25144a37b3848d2a7ea290a750df3bf5d15eaf1a9181c8aa39769830757b0d9bdef628ea09b6ccbe3bde647c2a30d22c5fa5470c50e815dcdcbdbfedd798e330"])
+getpid()
+close(r4)
+2024/05/09 01:00:05 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

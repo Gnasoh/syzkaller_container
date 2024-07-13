@@ -1,0 +1,14 @@
+pkey_mprotect(&(0x7f0000ffe000/0x2000)=nil, 0x2000, 0x2000001, r8)
+semget(0x2, 0x2, 0x201)
+getsockopt$inet_mreqsrc(r13, 0x0, 0x28, &(0x7f00000020c0)={@private, @private, @dev}, &(0x7f0000002100)=0xc)
+mmap$binder(&(0x7f0000fff000/0x1000)=nil, 0x1000, 0x1, 0x11, 0xffffffffffffffff, 0xffff)
+2024/05/09 09:04:41 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

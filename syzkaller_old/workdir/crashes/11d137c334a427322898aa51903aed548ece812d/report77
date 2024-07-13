@@ -1,0 +1,15 @@
+pkey_mprotect(&(0x7f0000ffc000/0x4000)=nil, 0x4000, 0x10, 0xffffffffffffffff)
+madvise(&(0x7f0000ffc000/0x3000)=nil, 0x3000, 0x12)
+syz_clone(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+03:14:16 executing program 5:
+socket$inet6_udp(0xa, 0x2, 0x0)
+2024/05/09 03:14:17 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,11 @@
+sendmsg$ETHTOOL_MSG_PAUSE_GET(r3, &(0x7f0000000ac0)={0x0, 0x0, &(0x7f0000000a80)={&(0x7f00000000c0)=ANY=[@ANYBLOB='.4\x00\x00\x00', @ANYRES16=r4, @ANYBLOB="010000000000000000001500000020000180080003000000000000000100", @ANYRES32=0x0, @ANYBLOB], 0x34}}, 0x0)
+2024/05/09 13:09:02 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

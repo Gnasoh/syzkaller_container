@@ -1,0 +1,15 @@
+io_uring_setup(0x3679, &(0x7f0000000080))
+r5 = io_uring_setup(0x7a4, &(0x7f0000000100)={0x0, 0x0, 0x42})
+io_uring_register$IORING_REGISTER_ENABLE_RINGS(r5, 0xc, 0x0, 0x0)
+clock_nanosleep(0x2, 0x0, &(0x7f0000000080)={0x0, 0x989680}, 0x0)
+close(r3)
+2024/05/09 21:29:27 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

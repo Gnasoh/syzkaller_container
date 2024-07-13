@@ -1,0 +1,13 @@
+io_uring_register$IORING_REGISTER_BUFFERS_UPDATE(r1, 0x10, &(0x7f0000000740)={0x0, 0x0, &(0x7f00000006c0)=[{0x0}, {0x0}], 0x0, 0x2}, 0x20)
+pkey_mprotect(&(0x7f0000000000/0x1000)=nil, 0x1000, 0x5, 0xffffffffffffffff)
+setitimer(0x0, &(0x7f00000000c0), 0x0)
+2024/05/10 09:36:27 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

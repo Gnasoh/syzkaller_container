@@ -1,0 +1,15 @@
+epoll_ctl$EPOLL_CTL_ADD(r2, 0x1, r1, &(0x7f0000000000))
+close(r1)
+r3 = openat$sysfs(0xffffffffffffff9c, &(0x7f0000001080)='/sys/class/devfreq', 0x0, 0x0)
+fcntl$notify(r3, 0x402, 0x2)
+close_range(r0, 0xffffffffffffffff, 0x0)
+2024/05/09 04:47:38 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

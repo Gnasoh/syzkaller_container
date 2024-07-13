@@ -1,0 +1,14 @@
+setsockopt$inet_mreqsrc(r2, 0x0, 0x27, &(0x7f0000000040)={@multicast1, @local, @multicast2}, 0xc)
+connect$inet6(r4, &(0x7f0000000100)={0xa, 0x4e23, 0x6, @loopback, 0x58c5}, 0x1c)
+setsockopt$inet_mreqsrc(r2, 0x0, 0x25, &(0x7f00000000c0)={@broadcast, @multicast1, @private=0xa010102}, 0xc)
+close_range(r1, 0xffffffffffffffff, 0x0)
+2024/05/09 13:46:06 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

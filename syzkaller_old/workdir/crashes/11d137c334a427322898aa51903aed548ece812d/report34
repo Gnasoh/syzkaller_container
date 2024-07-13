@@ -1,0 +1,13 @@
+48ddc117650f96eb81acf0609e5608", "9f286a632116c079cfafb2d39e2fb08738b449fcd40ac5a43be2bb7f05e6316a", "c1cd58cd1b6ba7d47f36553568e22d6b9ad736db00", "49568956baffb697f7a59e10947b088b85705e145c2da04defa3bde4a645bb0b", "c93a41a239cf8b7d5e6481ad483c8c1b0bd2864d3f39e4097420d4e9fe46d187", "c5fa883369e4aeea2f39cb88", 0x4}})
+socketpair$unix(0x1, 0x1, 0x0, &(0x7f00000000c0))
+setsockopt$SO_ATTACH_FILTER(r0, 0x1, 0x1a, &(0x7f0000000000)={0x2, &(0x7f0000000180)=[{0x7, 0x0, 0x0, 0x5}, {0x6, 0xfe, 0xa9, 0x7fff}]}, 0x10)
+2024/05/09 21:53:07 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

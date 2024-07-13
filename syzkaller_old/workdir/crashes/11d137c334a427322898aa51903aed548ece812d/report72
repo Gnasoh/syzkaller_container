@@ -1,0 +1,15 @@
+connect$netlink(r1, &(0x7f0000000100)=@proc, 0x8)
+fallocate(r0, 0x0, 0x0, 0x92e5)
+r2 = openat(0xffffffffffffff9c, &(0x7f0000000100)='./file1\x00', 0x145142, 0x0)
+sendfile(r2, r0, 0x0, 0x10060a)
+unlinkat(0xffffffffffffff9c, &(0x7f0000000000)='./file1\x00', 0x0)
+2024/05/09 01:38:44 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

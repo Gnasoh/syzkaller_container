@@ -1,0 +1,13 @@
+pkey_mprotect(&(0x7f0000000000/0x4000)=nil, 0x4000, 0x5, 0xffffffffffffffff)
+clock_gettime(0x0, &(0x7f0000004600)={0x0, <r7=>0x0})
+recvmmsg(r0, &(0x7f0000004440)=[{{0x0, 0x0, 0x0}}, {{0x0, 0x0, 0x0, 0x1f}, 0xffffffff}], 0x2, 0x40002000, &(0x7f0000000000)={0x0, r7+10000000})
+2024/05/09 00:25:39 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,15 @@
+r3 = epoll_create1(0x0)
+epoll_pwait2(r3, &(0x7f0000000180)=[{}], 0x1, 0x0, 0x0, 0x0)
+syslog(0x0, 0x0, 0x0)
+io_uring_register$IORING_REGISTER_EVENTFD_ASYNC(r0, 0x7, &(0x7f0000000000)=r1, 0x1)
+close_range(r1, 0xffffffffffffffff, 0x0)
+2024/05/09 14:05:27 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

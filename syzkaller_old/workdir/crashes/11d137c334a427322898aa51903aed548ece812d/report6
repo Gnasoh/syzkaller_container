@@ -1,0 +1,12 @@
+LOB="152340fd62e9681311ae72c743f4d6fa2641f1013691215482b347881d5ee5beff1aa43081506606e6d85daac0ed3f66c52ebf406fd72e54ee9851b65af8099da3f8d2fd92bfb459a9aa60c42c72ac6b86cf9c0818d12a4078771f31c6bbaed69dac97a1f15ddb0b5a5230c196c1c616bcd2c2a47264ff8b7d0e35dbe1826485de593115a9779243586424a089fea22beced2c06aba8bba6a99f40e9e36e9cd225eb9b4114b6a6b94ed7503ce40bcdadd868059041cf8ef1d232e1b0fc7a0629bcc863d104a27d4d9027b091e4c3121d496a128417", @ANYRESHEX=r0, @ANYRES16, @ANYRESDEC=r0], 0xb)
+fallocate(r0, 0x10, 0x0, 0x2)
+2024/05/09 12:58:02 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

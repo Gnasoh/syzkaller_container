@@ -1,0 +1,15 @@
+shmctl$IPC_RMID(r7, 0x0)
+timer_create(0x7, 0x0, &(0x7f0000000000))
+unlinkat(r5, &(0x7f0000000140)='./file1\x00', 0x0)
+timer_settime(0x0, 0x0, &(0x7f00000000c0)={{}, {0x0, 0x3938700}}, 0x0)
+shmctl$IPC_STAT(r7, 0x2, &(0x7f0000000000)=""/216)
+2024/05/10 01:28:20 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,15 @@
+prctl$PR_SET_SECCOMP(0x16, 0x0, 0x0)
+perf_event_open(0x0, 0x0, 0x0, r0, 0x8)
+ioctl$UFFDIO_UNREGISTER(r0, 0x8010aa01, &(0x7f0000002100)={&(0x7f0000ffc000/0x1000)=nil, 0x1000})
+write$P9_RXATTRCREATE(r0, &(0x7f0000000080)={0x5}, 0xfffffe2e)
+ioctl$EXT4_IOC_ALLOC_DA_BLKS(r0, 0x660c)
+2024/05/09 12:35:16 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

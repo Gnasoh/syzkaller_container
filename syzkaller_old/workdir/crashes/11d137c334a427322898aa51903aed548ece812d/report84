@@ -1,0 +1,14 @@
+sendmmsg$inet6(r0, &(0x7f0000000300)=[{{&(0x7f00000001c0)={0xa, 0x4e21, 0x0, @loopback}, 0x1c, 0x0}}], 0x1, 0x0)
+r2 = syz_open_procfs(0x0, &(0x7f0000000000)='task\x00')
+getdents64(r2, &(0x7f0000000280)=""/238, 0xee)
+setsockopt$MRT6_DEL_MIF(r2, 0x29, 0xcb, &(0x7f0000000100)={0xffffffffffffffff, 0x0, 0xe, r1, 0x10001}, 0xc)
+2024/05/09 05:19:10 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

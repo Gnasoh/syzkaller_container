@@ -1,0 +1,12 @@
+mq_open(&(0x7f00000023c0)='W\xc0\a\x8c?\xb0\xc9;\xaa\x13\xd2\v\aQ:\x17\a\xbf||\x8c~~\xdd\xa5%\xaa\xf2\x97\x94\r\x8f\xb2\x85|\xd5\xdc\xfd\xd8\x9f\xa4nm\xb6\xd2\xdb.\xd5\xa1\f\xbe\xa0P\"ut\xd4\xe0\x0e\x95\xe2\xf4\x8d\xc5\xee\xa4\f\x8f\t\xfdN\xba\xfaA\xaf\xce+j\x1b', 0x40, 0x0, 0x0)
+pkey_alloc(0x0, 0x0)
+2024/05/09 23:31:16 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

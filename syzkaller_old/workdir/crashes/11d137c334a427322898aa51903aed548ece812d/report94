@@ -1,0 +1,12 @@
+ptrace$setregset(0x4205, r1, 0x202, &(0x7f0000000080)={&(0x7f0000000000)="149d4395392ef9b81d8eb3e9d9cca1e3b04d573190b15f0cca1fca7f7b9b09f507ee6ebba188271ba6dc1db859d2e8b75a40f95d67d845622bc4baf505f185cd7c8a0b80752805203e69dbe8", 0x4c})
+process_vm_writev(r1, &(0x7f0000000280)=[{&(0x7f0000000200)=""/92, 0x5c}], 0x1, &(0x7f0000000300)=[{&(0x7f0000001340)=""/4109, 0x100d}], 0x1, 0x0)
+2024/05/09 08:31:59 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

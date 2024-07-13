@@ -1,0 +1,15 @@
+r1 = openat(0xffffffffffffff9c, &(0x7f0000000100)='./file1\x00', 0x42, 0x1ff)
+fcntl$dupfd(r1, 0x0, r1)
+r2 = openat(0xffffffffffffff9c, &(0x7f0000000100)='./file1\x00', 0x0, 0x0)
+copy_file_range(r2, 0x0, r1, 0x0, 0x4, 0x0)
+write$P9_RREADLINK(r2, &(0x7f0000000000)={0x10, 0x17, 0x2, {0x7, './file0'}}, 0x10)
+2024/05/10 03:55:12 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

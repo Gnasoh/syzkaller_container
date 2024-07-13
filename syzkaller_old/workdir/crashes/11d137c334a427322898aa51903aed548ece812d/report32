@@ -1,0 +1,15 @@
+setsockopt$inet_tcp_TCP_QUEUE_SEQ(r1, 0x6, 0x15, 0x0, 0x0)
+21:19:33 executing program 1:
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+syz_emit_ethernet(0x16, &(0x7f0000001080)={@dev, @multicast, @val, {@generic={0x88a8}}}, 0x0)
+bind$netlink(r0, &(0x7f0000000040)={0x10, 0x0, 0x0, 0x20000000}, 0xc)
+2024/05/09 21:19:33 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,12 @@
+syz_emit_ethernet(0x3e, &(0x7f0000000000)={@random="d340d046e2bf", @local, @void, {@ipv6={0x86dd, @icmpv6={0x0, 0x6, "870747", 0x8, 0x3a, 0x0, @local, @local, {[], @echo_reply}}}}}, 0x0)
+sendmmsg$inet(r0, &(0x7f0000003780)=[{{&(0x7f00000002c0)={0x2, 0x4e00, @private=0xa010100}, 0x10, 0x0, 0x0, &(0x7f0000000040)=[@ip_retopts={{0x18, 0x0, 0x7, {[@cipso={0x86, 0x6}]}}}], 0x18}}], 0x1, 0x0)
+2024/05/09 04:19:37 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

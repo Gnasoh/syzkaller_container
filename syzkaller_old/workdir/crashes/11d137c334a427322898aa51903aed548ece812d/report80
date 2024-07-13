@@ -1,0 +1,12 @@
+setsockopt$inet6_tcp_TCP_ULP(r0, 0x6, 0x1f, &(0x7f0000000080), 0x4)
+syz_emit_ethernet(0x42, &(0x7f0000000000)={@multicast, @multicast, @void, {@arp={0x806, @ether_ipv6={0x1, 0x86dd, 0x6, 0x10, 0x0, @empty, @mcast1, @random="075d7520cd51", @mcast1}}}}, 0x0)
+2024/05/09 03:53:37 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

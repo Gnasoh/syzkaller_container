@@ -1,0 +1,13 @@
+setsockopt$inet6_tcp_TCP_MD5SIG(r0, 0x6, 0xe, &(0x7f0000000180)={@in6={{0xa, 0x0, 0x0, @local}}, 0x0, 0x0, 0x2c, 0x0, "e58aa43f85bcf587d2104a70a89b14a20a1104c0861f8e944a133cdb9c5c51ded220700e760d125aa1069f5970dd413a62c6999df2f04b57a3dbd87580f467eeead1bf06f59606ad8530fec4a6bb7dba"}, 0xd8)
+bind$inet6(r0, &(0x7f0000000040)={0xa, 0x0, 0x0, @ipv4={'\x00', '\xff\xff', @local}}, 0x1c)
+connect$inet6(r0, &(0x7f0000000000)={0xa, 0x0, 0x0, @empty}, 0x1c)
+2024/05/09 17:34:13 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

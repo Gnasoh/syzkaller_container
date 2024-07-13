@@ -1,0 +1,15 @@
+setregid(r2, r1)
+move_pages(0x0, 0x1, &(0x7f0000000080)=[&(0x7f0000ffc000/0x4000)=nil], &(0x7f00000000c0), &(0x7f0000000100), 0x0)
+r3 = getegid()
+setregid(r3, r3)
+getgroups(0x4, &(0x7f0000000000)=[r2, r2, r3, r1])
+2024/05/09 19:17:58 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,13 @@
+r4 = openat$apparmor_thread_current(0xffffffffffffff9c, &(0x7f0000000100), 0x2, 0x0)
+write$apparmor_current(r4, &(0x7f0000000140)=@profile={'changeprofile ', '&.!\x00'}, 0x12)
+io_submit(r3, 0x1, &(0x7f0000001dc0)=[&(0x7f0000001cc0)={0x0, 0x0, 0x0, 0x1, 0x1, r1, 0x0, 0x0, 0x1f}])
+2024/05/10 04:55:13 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

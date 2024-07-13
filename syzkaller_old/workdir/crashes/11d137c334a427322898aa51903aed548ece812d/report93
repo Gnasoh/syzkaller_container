@@ -1,0 +1,13 @@
+shutdown(r3, 0x1)
+sendmmsg$inet6(r3, &(0x7f0000000080)=[{{&(0x7f0000000100)={0xa, 0x4e20, 0x0, @initdev={0xfe, 0x88, '\x00', 0x0, 0x0}}, 0x1c, 0x0}}], 0x1, 0x404c800)
+getsockopt$inet6_tcp_buf(r2, 0x6, 0xd, &(0x7f0000000000)=""/27, &(0x7f0000000040)=0x1b)
+2024/05/09 08:11:22 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

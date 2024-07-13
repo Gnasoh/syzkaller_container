@@ -1,0 +1,15 @@
+syz_emit_ethernet(0x2e, &(0x7f00000000c0)={@local, @empty, @void, {@ipv4={0x800, @igmp={{0x6, 0x4, 0x0, 0x0, 0x20, 0x0, 0x0, 0x0, 0x2, 0x0, @local, @initdev={0xac, 0x1e, 0x0, 0x0}, {[@generic={0x83, 0x2}]}}, {0x0, 0x0, 0x0, @local}}}}}, 0x0)
+r0 = syz_clone3(&(0x7f0000000080)={0x10000, 0x0, 0x0, 0x0, {}, 0x0, 0x0, 0x0, 0x0}, 0x58)
+r1 = syz_open_procfs(r0, &(0x7f0000000040)='net/fib_trie\x00')
+mknodat(r1, &(0x7f0000000140)='./file0\x00', 0x0, 0x0)
+pkey_alloc(0x0, 0x0)
+2024/05/10 02:10:30 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

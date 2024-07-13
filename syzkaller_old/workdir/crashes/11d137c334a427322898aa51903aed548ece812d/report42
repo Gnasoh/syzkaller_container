@@ -1,0 +1,15 @@
+connect$netlink(r2, &(0x7f00000001c0), 0xc)
+write$P9_RFSYNC(r1, &(0x7f0000000040)={0x7}, 0xffffff88)
+01:04:13 executing program 2:
+r0 = syz_open_procfs(0x0, &(0x7f0000000040)='oom_score\x00')
+read$FUSE(r0, &(0x7f0000003a40)={0x2020}, 0x2020)
+2024/05/10 01:04:13 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

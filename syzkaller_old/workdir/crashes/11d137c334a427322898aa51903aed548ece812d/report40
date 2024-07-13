@@ -1,0 +1,14 @@
+madvise(&(0x7f0000000000/0x4000)=nil, 0x4000, 0x15)
+r0 = landlock_create_ruleset(&(0x7f00000000c0)={0x100}, 0x10, 0x0)
+read(r0, 0x0, 0x0)
+ioctl$AUTOFS_DEV_IOCTL_PROTOSUBVER(0xffffffffffffffff, 0xc0189373, &(0x7f00000000c0)={{0x1, 0x1, 0x18, r0, {0x7ff}}, './file0\x00'})
+2024/05/10 00:34:53 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

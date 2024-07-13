@@ -1,0 +1,13 @@
+madvise(&(0x7f0000ffc000/0x2000)=nil, 0x2000, 0x2)
+r0 = getpgrp(0xffffffffffffffff)
+move_pages(r0, 0x2, &(0x7f0000000000)=[&(0x7f0000ffc000/0x4000)=nil, &(0x7f0000ffc000/0x4000)=nil], &(0x7f0000000040), &(0x7f0000000040)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0], 0x2)
+2024/05/10 07:07:19 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,11 @@
+syz_emit_ethernet(0x37, &(0x7f0000000000)=ANY=[@ANYBLOB="aaaaaaaaaaaaaaaaaa06aa04000000e2000100012c00fc060000000000000000000046935834fe80000000000071ac19a2a5c102d77b6ebc3427ee65a46d6d5c9663e6382f2cb462b873fe6e28c7b1725639b438bdde58ad27df330f758c84915359307e8f829235aa8c802684ff1c46a83517f1f31fefe04a7d35128577ec24d2ba128c96d59d07d767948e6079f25ee51c16fe2f438bd420ef53742f35513ca80929ff2fa7d4b11d3a966f79e65c8457164cb344a32d8db25709379b75507dbf71af2daedb50e7e59a3ef64fb6b9d5e98252"], 0x0)
+2024/05/09 14:54:20 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

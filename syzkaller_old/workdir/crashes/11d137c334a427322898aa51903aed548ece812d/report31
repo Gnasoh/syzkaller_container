@@ -1,0 +1,12 @@
+sendmmsg$inet6(r4, &(0x7f0000002d00)=[{{&(0x7f0000000100)={0xa, 0x4e23, 0x0, @mcast2}, 0x1c, 0x0, 0x0, &(0x7f0000001580)=ANY=[@ANYBLOB="14000000000000ddd29acff9793e06fd41b2"], 0x18}}], 0x1, 0x0)
+openat(0xffffffffffffffff, &(0x7f0000000080)='./file0\x00', 0x0, 0x66)
+2024/05/09 20:59:59 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

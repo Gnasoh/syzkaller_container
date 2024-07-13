@@ -1,0 +1,1 @@
+SYZFATAL: Manager.Check call failed: machine check failed: coverage is not supported (CONFIG_KCOV is not enabled)

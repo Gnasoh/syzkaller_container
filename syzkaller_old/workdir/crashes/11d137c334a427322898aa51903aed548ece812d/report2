@@ -1,0 +1,13 @@
+mmap(&(0x7f0000ffb000/0x4000)=nil, 0x4000, 0x2000005, 0x2012, r6, 0x0)
+pkey_mprotect(&(0x7f0000ffe000/0x1000)=nil, 0x1000, 0x2, 0xffffffffffffffff)
+sched_setattr(r1, &(0x7f0000000000)={0x38, 0x0, 0x14c3407dd9e8eb5d, 0x9, 0x4, 0x1, 0x5bb, 0x42dc, 0x7fffffff, 0x7}, 0x0)
+2024/05/09 11:34:40 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

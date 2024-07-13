@@ -1,0 +1,15 @@
+fallocate(r9, 0x0, 0x0, 0x4000104)
+truncate(&(0x7f0000000000)='./file1\x00', 0x3)
+08:02:47 executing program 0:
+r0 = socket$netlink(0x10, 0x3, 0x9)
+bind$netlink(r0, &(0x7f0000000000)={0x10, 0x0, 0x0, 0x2000000}, 0xc)
+2024/05/10 08:02:47 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

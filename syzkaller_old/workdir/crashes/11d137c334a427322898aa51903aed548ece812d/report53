@@ -1,0 +1,15 @@
+r1 = socket$inet_udp(0x2, 0x2, 0x0)
+getsockopt$sock_int(r1, 0x1, 0x22, 0x0, &(0x7f0000000080))
+r2 = memfd_create(&(0x7f0000000080)='/proc/schedstat\x00', 0x0)
+fallocate(r2, 0x3, 0x237, 0xfe09)
+mknodat(r0, &(0x7f0000000040)='./file0\x00', 0x400, 0x7)
+2024/05/10 04:39:52 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

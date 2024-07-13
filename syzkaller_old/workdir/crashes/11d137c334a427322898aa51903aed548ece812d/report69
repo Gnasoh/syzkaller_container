@@ -1,0 +1,11 @@
+syz_emit_ethernet(0x36, &(0x7f0000000080)={@link_local, @local, @void, {@ipv4={0x800, @dccp={{0x6, 0x4, 0x0, 0x0, 0x28, 0x0, 0x0, 0x0, 0x21, 0x0, @dev, @initdev={0xac, 0x1e, 0x0, 0x0}, {[@timestamp_prespec={0x44, 0x4, 0xab}]}}, {{0x0, 0x0, 0x4, 0x1, 0x0, 0x0, 0x0, 0x0, 0x0, "896724", 0x0, "1335a1"}}}}}}, 0x0)
+2024/05/10 10:13:31 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

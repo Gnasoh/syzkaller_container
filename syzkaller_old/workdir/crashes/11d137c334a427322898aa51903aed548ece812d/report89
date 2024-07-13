@@ -1,0 +1,14 @@
+r1 = syz_open_procfs(0x0, &(0x7f0000000000)='fdinfo/3\x00')
+read$FUSE(r1, &(0x7f0000000080)={0x2020}, 0x2020)
+symlinkat(&(0x7f00000001c0)='./file2\x00', 0xffffffffffffff9c, &(0x7f0000000200)='./file6\x00')
+syz_emit_ethernet(0x2b, &(0x7f0000000080)=ANY=[@ANYBLOB="aaaaaaaaaaaa000000000000080056000000119078"], 0x0)
+2024/05/09 06:35:28 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

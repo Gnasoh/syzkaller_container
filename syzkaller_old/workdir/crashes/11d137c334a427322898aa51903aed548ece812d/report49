@@ -1,0 +1,12 @@
+ba3058531a94b6bbd11a8c992f7389f787"]}, 0x24d8}], 0x6, &(0x7f00000006c0)=[@rights={{0x28, 0x1, 0x1, [r0, r1, r1, 0xffffffffffffffff, r1, r1]}}, @rights={{0x1c, 0x1, 0x1, [r1, r0, r0]}}, @rights={{0x28, 0x1, 0x1, [r1, r8, r1, r1, r9, r1]}}, @cred={{0x1c, 0x1, 0x2, {r10, r13, r15}}}, @cred={{0x1c, 0x1, 0x2, {r16, r17, r18}}}], 0xb0, 0x4008004}, 0x20000000)
+sendmsg$netlink(r0, &(0x7f0000000c80)={0x0, 0x0, &(0x7f0000000bc0)=[{&(0x7f0000000cc0)=ANY=[@ANYBLOB="1000001f0001000000000000000000"], 0x10}], 0x1}, 0x0)
+2024/05/10 03:19:55 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

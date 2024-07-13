@@ -1,0 +1,15 @@
+sendfile(r2, r8, 0x0, 0x87c1)
+01:55:06 executing program 4:
+mknodat(0xffffffffffffffff, &(0x7f0000000000)='./file2\x00', 0x20, 0x7)
+prctl$PR_SET_NO_NEW_PRIVS(0x26, 0x1)
+execveat(0xffffffffffffff9c, &(0x7f0000000280)='./file2\x00', 0x0, 0x0, 0x0)
+2024/05/09 01:55:06 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

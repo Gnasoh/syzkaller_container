@@ -1,0 +1,15 @@
+shmget$private(0x0, 0x2000, 0x200, &(0x7f0000ffc000/0x2000)=nil)
+socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_int(0xffffffffffffffff, 0x29, 0x0, 0x0, 0x0)
+stat(0x0, 0x0)
+read$FUSE(r2, &(0x7f0000002900)={0x2020}, 0x2020)
+2024/05/09 20:15:26 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

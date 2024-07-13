@@ -1,0 +1,14 @@
+r0 = memfd_create(&(0x7f0000000000)='^\x00\x00@\x00\x00\x00\xa5\\\x1bGE\vg\xe6X\xfe%S\xc7\x97\xc4\xbdK\xa1\x069[\x89D\xf8\xdc\b\xcd\xdc\bo\xb1\xe4+\x91\xb6Fa\x886r\x00'/60, 0x7)
+lseek(r0, 0x0, 0x1)
+r1 = socket$inet6_udplite(0xa, 0x2, 0x88)
+syz_clone3(&(0x7f0000000100)={0x200000000, 0x0, 0x0, 0x0, {}, 0x0, 0x0, 0x0, 0x0, 0x0, {r1}}, 0x58)
+2024/05/09 12:04:42 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

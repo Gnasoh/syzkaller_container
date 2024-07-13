@@ -1,0 +1,15 @@
+r0 = eventfd(0x1ff)
+read(r0, &(0x7f0000002100)=""/77, 0x4d)
+r1 = userfaultfd(0x80001)
+ioctl$UFFDIO_API(r1, 0xc018aa3f, &(0x7f0000000000)={0xaa, 0x775885d2d999e540})
+syz_emit_ethernet(0x42, &(0x7f0000000040)=ANY=[@ANYBLOB="ffffffffffff92320806000186dd"], 0x0)
+2024/05/09 19:35:24 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

@@ -1,0 +1,14 @@
+readv(r1, &(0x7f00000000c0)=[{&(0x7f0000000180)=""/186, 0xba}], 0x1)
+pkey_mprotect(&(0x7f0000000000/0x4000)=nil, 0x4000, 0x5, 0xffffffffffffffff)
+r8 = syz_open_procfs(0x0, &(0x7f0000001140)='cmdline\x00')
+read$FUSE(r8, &(0x7f0000005140)={0x2020}, 0x2020)
+2024/05/10 02:23:36 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

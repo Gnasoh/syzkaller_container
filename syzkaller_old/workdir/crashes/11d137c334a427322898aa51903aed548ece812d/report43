@@ -1,0 +1,14 @@
+ioctl$sock_SIOCETHTOOL(r1, 0x8946, &(0x7f0000000380)={'lo\x00', &(0x7f0000000600)=ANY=[@ANYBLOB="4b0000000e00"]})
+ioctl$sock_SIOCSIFVLAN_SET_VLAN_NAME_TYPE_CMD(r1, 0x8983, &(0x7f0000000000)={0x6, 'veth1_vlan\x00', {0x20}, 0x20})
+lseek(r0, 0x1, 0x0)
+read(r0, &(0x7f0000000180)=""/223, 0xdf)
+2024/05/10 01:14:06 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

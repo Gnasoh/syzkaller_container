@@ -1,0 +1,15 @@
+pipe2$9p(&(0x7f0000000000)={0xffffffffffffffff, <r7=>0xffffffffffffffff}, 0x0)
+close(0x3)
+openat$ptmx(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+sendfile(r7, r6, 0x0, 0x0)
+close_range(r0, 0xffffffffffffffff, 0x0)
+2024/05/09 18:39:02 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

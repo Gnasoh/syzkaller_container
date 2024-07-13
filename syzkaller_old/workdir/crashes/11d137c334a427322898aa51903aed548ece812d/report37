@@ -1,0 +1,15 @@
+pread64(r6, &(0x7f0000000180)=""/235, 0xeb, 0x3)
+shmctl$IPC_RMID(r1, 0x0)
+shmctl$SHM_INFO(r0, 0xe, &(0x7f0000000180)=""/176)
+read(0xffffffffffffffff, &(0x7f0000000080)=""/249, 0xf9)
+write$FUSE_NOTIFY_RETRIEVE(0xffffffffffffffff, 0x0, 0x2e)
+2024/05/09 23:03:15 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

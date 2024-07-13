@@ -1,0 +1,15 @@
+fallocate(r1, 0x0, 0x0, 0x92e5)
+r2 = openat(0xffffffffffffff9c, &(0x7f0000000100)='./file1\x00', 0x145142, 0x0)
+close(r1)
+sendfile(r2, r1, 0x0, 0x10060a)
+ioctl$EXT4_IOC_MOVE_EXT(r1, 0xc028660f, &(0x7f0000000000)={0x0, r2})
+2024/05/09 06:06:02 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

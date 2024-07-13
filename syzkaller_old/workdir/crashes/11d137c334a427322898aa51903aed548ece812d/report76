@@ -1,0 +1,15 @@
+r2 = inotify_init1(0x0)
+inotify_add_watch(r2, &(0x7f0000000140)='.\x00', 0x80000806)
+syz_genetlink_get_family_id$tipc2(&(0x7f0000000080), r0)
+readv(r2, &(0x7f00000000c0)=[{&(0x7f0000000180)=""/187, 0xbb}], 0x1)
+chmod(&(0x7f0000000000)='./file0\x00', 0x180)
+2024/05/09 02:56:50 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

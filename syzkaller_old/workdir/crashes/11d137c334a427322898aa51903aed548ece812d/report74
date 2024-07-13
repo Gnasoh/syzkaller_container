@@ -1,0 +1,15 @@
+r5 = syz_open_procfs$namespace(0x0, &(0x7f0000000000)='ns/pid_for_children\x00')
+ioctl$F2FS_IOC_START_ATOMIC_WRITE(r5, 0xf501, 0x0)
+fallocate(r4, 0x0, 0x8001, 0x92e5)
+r6 = openat(0xffffffffffffff9c, &(0x7f0000000100)='./file1\x00', 0x145142, 0x0)
+sendfile(r6, r4, 0x0, 0x10060a)
+2024/05/09 02:06:06 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

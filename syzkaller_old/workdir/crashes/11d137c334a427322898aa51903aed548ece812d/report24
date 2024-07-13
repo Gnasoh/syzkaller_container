@@ -1,0 +1,15 @@
+19:06:58 executing program 3:
+r0 = socket$netlink(0x10, 0x3, 0x0)
+mmap(&(0x7f0000000000/0x3000)=nil, 0x3000, 0x3000004, 0x121013, r0, 0xc412000)
+madvise(&(0x7f0000000000/0x2000)=nil, 0x2000, 0xe)
+bind$netlink(r0, &(0x7f0000000140), 0xc)
+2024/05/09 19:06:58 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

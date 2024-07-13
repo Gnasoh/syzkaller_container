@@ -1,0 +1,13 @@
+syz_genetlink_get_family_id$nl80211(&(0x7f0000000200), r6)
+sendfile(r4, r2, 0x0, 0x9)
+write$P9_RREADDIR(r3, &(0x7f0000000040)={0x68, 0x29, 0x2, {0x2, [{{0x8, 0x0, 0x7}, 0x8000000000000000, 0xfc, 0x7, './file1'}, {{0x8}, 0x9, 0x1, 0x7, './file1'}, {{0x0, 0x3, 0x7}, 0x5, 0x9, 0x7, './file1'}]}}, 0x68)
+2024/05/09 19:50:34 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

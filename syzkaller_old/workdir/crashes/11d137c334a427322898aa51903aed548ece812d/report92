@@ -1,0 +1,15 @@
+read(r5, &(0x7f0000000140)=""/4096, 0x1000)
+r6 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+write$binfmt_misc(r0, &(0x7f0000000000)=ANY=[@ANYRES64=r6], 0x8)
+syz_clone(0x77164000, 0x0, 0x0, 0x0, 0x0, 0x0)
+accept4$unix(0xffffffffffffffff, 0x0, 0x0, 0x0)
+2024/05/09 07:47:45 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

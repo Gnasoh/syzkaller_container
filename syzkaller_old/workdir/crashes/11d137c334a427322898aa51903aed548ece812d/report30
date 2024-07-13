@@ -1,0 +1,15 @@
+close(0xffffffffffffffff)
+r0 = getpgid(0x0)
+rt_tgsigqueueinfo(r0, r0, 0x0, &(0x7f0000002d40)={0x0, 0x0, 0xfffffffb})
+r1 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$inet_msfilter(r1, 0x0, 0x29, &(0x7f0000000180)={@dev, @private}, 0x10)
+2024/05/09 20:45:54 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

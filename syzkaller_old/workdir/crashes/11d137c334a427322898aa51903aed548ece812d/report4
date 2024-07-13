@@ -1,0 +1,15 @@
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000300)={<r1=>0xffffffffffffffff, <r2=>0xffffffffffffffff})
+setsockopt$SO_TIMESTAMP(r2, 0x1, 0x40, &(0x7f00000001c0)=0x200, 0x4)
+recvmmsg(r2, &(0x7f0000000680)=[{{0x0, 0x0, 0x0}}], 0x1, 0x0, 0x0)
+write$binfmt_misc(r1, 0x0, 0x0)
+syz_clone(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+2024/05/09 12:16:49 SYZFATAL: executor 0 failed 11 times: executor 0: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

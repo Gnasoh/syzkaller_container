@@ -1,0 +1,12 @@
+ioctl$AUTOFS_DEV_IOCTL_PROTOSUBVER(0xffffffffffffffff, 0xc0189373, &(0x7f0000000000)=ANY=[@ANYBLOB="010000000100000018000000", @ANYRES32=<r5=>0xffffffffffffffff, @ANYBLOB="02000000000800002e2f66696c653000"])
+ioctl$sock_FIOSETOWN(r5, 0x8901, &(0x7f0000000040)=r4)
+2024/05/09 02:30:59 SYZFATAL: executor 4 failed 11 times: executor 4: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

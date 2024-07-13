@@ -1,0 +1,15 @@
+34e636415f6d0a0eae4191c0b0f0fce01d2e614cf14459854f26165085a524e13023a666415d0f40f7c4a1a4fa7a92def47972a672470bfc062a5ee1893bca90beaae04e587abc2c9d2c1cdd1f06e2bd8a3d4e04481f761ecc2f4899a7c92b64ddc7d7a1f35a582b788b9ec0c45ee4ed9568b1590bec991184bf1c1652e6dc858f511a20ad90bf4"], 0x28}}], 0x2, 0x0)
+04:28:51 executing program 3:
+r0 = open$dir(&(0x7f0000000080)='./file1\x00', 0x2c000, 0x26)
+r1 = openat(r0, &(0x7f0000000040)='./file1\x00', 0x2b0142, 0x22)
+ioctl$FS_IOC_SETVERSION(r1, 0x40087602, &(0x7f0000000000))
+2024/05/10 04:28:51 SYZFATAL: executor 3 failed 11 times: executor 3: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

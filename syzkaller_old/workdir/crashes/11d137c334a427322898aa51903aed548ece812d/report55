@@ -1,0 +1,15 @@
+write$binfmt_misc(r0, &(0x7f0000000040)=ANY=[@ANYRES32=r0], 0x8)
+syz_clone(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+r2 = creat(&(0x7f0000000000)='./file0\x00', 0x0)
+write$P9_RXATTRCREATE(r2, &(0x7f0000000080)={0x5}, 0xfffffe2e)
+munmap(&(0x7f0000000000/0x2000)=nil, 0x2000)
+2024/05/10 05:11:28 SYZFATAL: executor 1 failed 11 times: executor 1: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

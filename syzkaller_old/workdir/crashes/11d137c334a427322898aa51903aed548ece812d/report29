@@ -1,0 +1,13 @@
+openat(0xffffffffffffffff, &(0x7f0000000000)='./file0\x00', 0x8001, 0x2)
+r1 = socket$inet6_udplite(0xa, 0x2, 0x88)
+sendmmsg$inet6(r1, &(0x7f0000000a40)=[{{&(0x7f0000000080)={0xa, 0x4e22, 0x0, @empty}, 0x1c, 0x0, 0x0, 0xfffffffffffffffe}}, {{0x0, 0x0, &(0x7f0000000740)=[{&(0x7f0000002180)='C', 0x1}], 0x1}}], 0x2, 0x8000)
+2024/05/09 20:32:46 SYZFATAL: executor 5 failed 11 times: executor 5: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67

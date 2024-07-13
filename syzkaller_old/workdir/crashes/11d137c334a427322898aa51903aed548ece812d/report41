@@ -1,0 +1,14 @@
+0211_CMD_SET_COALESCE(r0, &(0x7f0000000180)={&(0x7f0000000040)={0x10, 0x0, 0x0, 0x4000000}, 0xc, &(0x7f0000000140)={&(0x7f0000000100)={0x28, r1, 0x400, 0x70bd26, 0x25dfdbfc, {{}, {@void, @val={0xc, 0x99, {0xfffffffc, 0x1}}}}, [@NL80211_ATTR_COALESCE_RULE_DELAY={0x8, 0x1, 0x10000}]}, 0x28}, 0x1, 0x0, 0x0, 0x20004001}, 0x4000)
+r2 = socket$inet6_tcp(0xa, 0x1, 0x0)
+connect$inet6(r2, &(0x7f0000000080)={0xa, 0x0, 0x0, @remote, 0x1}, 0x1c)
+setsockopt$inet6_tcp_TCP_QUEUE_SEQ(r2, 0x6, 0x15, &(0x7f0000000000), 0x4)
+2024/05/10 00:51:10 SYZFATAL: executor 2 failed 11 times: executor 2: exit status 67 err exit status 67
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
+
+SYZFAIL: failed to mkdir
+ (errno 28: No space left on device)
+loop exited with status 67
+exit status 67
